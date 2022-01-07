@@ -1,0 +1,97 @@
+package com.example;
+
+import java.awt.Font;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+
+public class StudentDetails {
+
+	public static void main(String[] args) 
+	{
+		
+		JFrame f1 = new JFrame ("Student Details");
+		JPanel p1 = new JPanel();
+		JLabel l1 = new JLabel("RollNo");
+		JLabel l2 = new JLabel("Name");
+		JLabel l3 = new JLabel("Department");
+		
+		
+		JLabel label = new JLabel();
+		label.setBounds(600, 430, 500, 30);
+		JButton b = new JButton("Show");
+		b.setBounds(1000, 300, 80, 30);
+		JLabel l4 = new JLabel("MailId");
+		JLabel l5 = new JLabel("ContactNo");
+		JLabel l6 = new JLabel("Address");
+		JLabel l7 = new JLabel("Gender");
+		JRadioButton r1 = new JRadioButton(" Male");
+        JRadioButton r2 = new JRadioButton(" Female");
+        r1.setBounds(250, 500, 100, 30);
+        r2.setBounds(350, 500, 100, 30);
+        ButtonGroup bg = new ButtonGroup();
+        bg.add(r1);
+        bg.add(r2);
+		JLabel l8 = new JLabel("Nationality");
+		JLabel l9 = new JLabel("YearOfPassing10thStd");
+		JLabel l10 = new JLabel("YearOfPassing12thstd");
+		
+		JRadioButton rb3 = new JRadioButton("HOSTELLER");
+        rb3.setBounds(550, 200, 100, 30);
+  
+        JRadioButton rb4 = new JRadioButton("DAY SCHOLAR");
+        rb4.setBounds(650, 200, 120, 30);
+  
+        ButtonGroup bg2 = new ButtonGroup();
+        bg2.add(rb3);
+        bg2.add(rb4);
+        JButton Submit = new JButton("Submit");
+        Submit.setFont(new Font("Arial", Font.PLAIN, 15));
+        Submit.setSize(100, 20);
+        Submit.setLocation(150, 450);
+     
+        Submit.setBounds(600, 490, 150, 30);
+        JButton Close = new JButton("Close");
+        Close.setBounds(750, 490, 150, 30);
+        JTextArea a = new JTextArea();
+        a.setBounds(600, 540, 450, 240);
+  
+		
+		JTextField t1 = new JTextField (10);
+		JTextField t2 = new JTextField (10);
+		JTextField t3 = new JTextField (10);
+		JTextField t4 = new JTextField (10);
+		JTextField t5 = new JTextField (10);
+		JTextField t6 = new JTextField (10);
+		JTextField t7 = new JTextField (10);
+		JTextField t8 = new JTextField (10);
+		JTextField t9 = new JTextField (10);
+		JTextField t10 = new JTextField (10);
+		
+		p1.add(l1);p1.add(t1);
+		p1.add(l2);p1.add(t2);
+		p1.add(l3);p1.add(t3);
+		p1.add(l4);p1.add(t4);
+		p1.add(l5);p1.add(t5);
+		p1.add(l6);p1.add(t6);
+		p1.add(l7);p1.add(t7);
+		p1.add(l8);p1.add(t8);
+		p1.add(l9);p1.add(t9);
+		p1.add(l10);p1.add(t10);
+		
+		
+		
+		f1.add(p1);
+		f1.setSize(300,300);
+		f1.setVisible(true);
+
+	}
+
+}
+
+
